@@ -1,0 +1,117 @@
+<HTML>
+　<HEAD>
+　　<TITLE>Start Page</TITLE>
+　　<Meta>
+
+	<font size="6">
+	<font face="Arial">
+	<b>
+	<center>
+
+
+	<span id=localtime></span>
+		<script type="text/javascript">
+		function showLocale(objD)
+		{
+		var str,colorhead,colorfoot;
+		var yy = objD.getYear();
+		if(yy<1900) yy = yy+1900;
+		var MM = objD.getMonth()+1;
+		if(MM<10) MM = '0' + MM;
+		var dd = objD.getDate();
+		if(dd<10) dd = '0' + dd;
+		var hh = objD.getHours();
+		if(hh<10) hh = '0' + hh;
+		var mm = objD.getMinutes();
+		if(mm<10) mm = '0' + mm;
+		var ss = objD.getSeconds();
+		if(ss<10) ss = '0' + ss;
+		var ww = objD.getDay();
+		if ( ww==0 ) colorhead="<font color=\"#FF0000\">";
+		if ( ww > 0 && ww < 6 ) colorhead="<font color=\"#373737\">";
+		if ( ww==6 ) colorhead="<font color=\"#008000\">";
+		if (ww==0) ww="星期日";
+		if (ww==1) ww="星期一";
+		if (ww==2) ww="星期二";
+		if (ww==3) ww="星期三";
+		if (ww==4) ww="星期四";
+		if (ww==5) ww="星期五";
+		if (ww==6) ww="星期六";
+		colorfoot="</font>"
+		str = colorhead + yy + "-" + MM + "-" + dd + "&nbsp&nbsp&nbsp&nbsp&nbsp"
+			+ hh + ":" + mm + ":" + ss + "&nbsp&nbsp&nbsp&nbsp&nbsp" 
+			+ ww + colorfoot;
+		return(str);
+		}
+		function tick()
+		{
+		var today;
+		today = new Date();
+		document.getElementById("localtime").innerHTML = showLocale(today);
+		window.setTimeout("tick()", 1000);
+		}
+		tick();
+	
+	</script>
+</center>
+
+
+
+
+
+　</HEAD>
+　<BODY>
+	<body bgcolor="	#F8F8FF">
+	<style>
+	a {
+		color:#0080ff;
+		text-decoration:none;　	
+	}
+	</style>
+	
+	<style>
+	a:hover {	
+		color:gray;
+	}
+	</style>
+
+
+	<p align="left">
+	<b>
+
+
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://www.youtube.com/">Youtube</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://www.facebook.com/">Facebook</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://tw.yahoo.com/">Yahoo</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://www.twitch.tv/">Twitch</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="http://knowledge.ical.tw/">Ical Knowledge</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://www.nuk.edu.tw/files/11-1000-654.php?Lang=zh-tw">高雄大學</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://course.nuk.edu.tw/Sel/login.asp">選課系統</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://course.nuk.edu.tw/QueryCourse/QueryCourse.asp">課程查詢</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://aca.nuk.edu.tw/Student2/login.asp">教務系統</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="http://elearning.nuk.edu.tw/default.php">E平台</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://blog.techbridge.cc/2018/01/17/learning-programming-and-coding-with-python-git-and-github-tutorial/">Git-TB</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://git-scm.com/book/zh-tw/v1/%E9%96%8B%E5%A7%8B">Git-Official</a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href=""></a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href=""></a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href=""></a><br><br>
+	&nbsp;&nbsp;&nbsp;
+	<a href=""></a><br><br>
+
+　</BODY>
+</HTML>
